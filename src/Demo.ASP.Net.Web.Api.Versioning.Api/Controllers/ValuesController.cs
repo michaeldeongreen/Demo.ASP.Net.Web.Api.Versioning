@@ -31,8 +31,9 @@ namespace Demo.ASP.Net.Web.Api.Versioning.Api.Controllers
         {
         }
 
+        [Route]
         // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
+        public void Put([FromBody]string value)
         {
         }
 
