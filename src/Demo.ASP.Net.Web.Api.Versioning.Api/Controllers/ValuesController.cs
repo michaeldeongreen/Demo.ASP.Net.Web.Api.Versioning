@@ -43,4 +43,15 @@ namespace Demo.ASP.Net.Web.Api.Versioning.Api.Controllers
         {
         }
     }
+
+    [ApiVersion("2")]
+    [RoutePrefix("api/v{version:apiVersion}/values")]
+    public class Values2Controller : ApiController
+    {
+        [Route]
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "value1", "value2", "value3" };
+        }
+    }
 }
