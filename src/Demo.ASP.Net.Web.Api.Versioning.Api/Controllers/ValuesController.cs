@@ -8,7 +8,7 @@ using System.Web.Http;
 
 namespace Demo.ASP.Net.Web.Api.Versioning.Api.Controllers
 {
-    [ApiVersion("1")]
+    [ApiVersion("1", Deprecated = true)]
     [RoutePrefix("api/v{version:apiVersion}/values")]
     public class ValuesController : ApiController
     {
