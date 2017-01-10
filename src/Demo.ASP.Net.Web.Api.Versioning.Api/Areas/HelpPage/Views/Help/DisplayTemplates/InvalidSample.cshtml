@@ -1,0 +1,13 @@
+@using Demo.ASP.Net.Web.Api.Versioning.Api.Areas.HelpPage
+@model InvalidSample
+
+@if (HttpContext.Current.IsDebuggingEnabled)
+{
+    <div class="warning-message-container">
+        <p>@Model.ErrorMessage</p>
+    </div>
+}
+else
+{
+    <p>Sample not available.</p>
+}
