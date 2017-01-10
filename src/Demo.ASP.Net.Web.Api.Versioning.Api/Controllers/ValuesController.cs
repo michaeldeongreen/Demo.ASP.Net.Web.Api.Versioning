@@ -37,6 +37,7 @@ namespace Demo.ASP.Net.Web.Api.Versioning.Api.Controllers
         {
         }
 
+        [Route("{id:int}")]
         // DELETE api/values/5
         public void Delete(int id)
         {
