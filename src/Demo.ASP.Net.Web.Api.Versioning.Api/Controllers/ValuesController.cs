@@ -25,6 +25,7 @@ namespace Demo.ASP.Net.Web.Api.Versioning.Api.Controllers
             return "value";
         }
 
+        [Route]
         // POST api/values
         public void Post([FromBody]string value)
         {
